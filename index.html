@@ -49,28 +49,40 @@
     </div>
   </section>
 
-  <section class="products" id="products">
+  <!--                            I CHANGED THIS, JUST REMOVE THIS LINE                            -->
+
+  <section class="products">                         <!-- took off our ID, not needed there  -->
+    <h3 class ='screen-reader-text'>Product Image Grid</h3>       <!-- per section, you gotta have a header, but in this case, make the header hidden for screen readers since it doesnt have to be shown -->
     <div class="product-categories">
-      <div class="category-wide mens">
-        <span class="category-name"><a href="#">Men's</a></span>
+
+      <div class="category-wide-mens">
+        <p class="category-name">Men's</p>           <!--  took off your <a> tags, also not needed unless they are links -->
+      </div>                                         <!-- also changed the <span> to <p> just to make it more semantic, since span is basically like emphasizing something within a line -->
+                                                     <!-- you dont really need the classes for the <p> since you can just target it in css like 'product-categories p{}' but im sure its ok to keep? -->
+      <div class="category-square-trends">           <!-- try not to use spaces while making classes/IDs, it will be harder for you to target in CSS :) -->
+        <p class="category-name">Trends</p>
       </div>
-      <div class="category-square trends">
-        <span class="category-name"><a href="#">Trends</a></span>
+
+      <div class="category-square-glasses">
+        <p class="category-name">Glasses</p>
       </div>
-      <div class="category-square glasses">
-        <span class="category-name"><a href="#">Glasses</a></span>
+
+      <div class="category-square-sale">
+        <p class="category-name">Sale</p>
       </div>
-      <div class="category-square sale">
-        <span class="category-name"><a href="#">Sale</a></span>
+
+      <div class="category-square-bags">
+        <p class="category-name">Bags</p>
       </div>
-      <div class="category-square bags">
-        <span class="category-name"><a href="#">Bags</a></span>
+
+      <div class="category-wide-womens">
+        <p class="category-name">Women's</p>
       </div>
-      <div class="category-wide womens">
-        <span class="category-name"><a href="#">Women's</a></span>
-      </div>
+
     </div>
   </section>
+
+  <!--                            I CHANGED UP TO HERE, JUST REMOVE THIS LINE                            -->
 
   <section class="featured" id="featured">
     <div class="container">
